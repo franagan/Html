@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.menu {
+  background-color: aqua;
+}
+.menu_list {
+  list-style-type: none;
+}
+.menu_list-item {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid rgb(211, 12, 168);
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.cards h2 {
+  width: 100%;
+  color: rgb(104, 20, 201);
+}
+.cards_element {
+  background-color: rgb(32, 9, 75);
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgb(12, 180, 88);
+  width: 90%;
+  margin-bottom: 10px;
+}
+.cards_element-img {
+  width: 100%;
+}
+.cards_element_title {
+  font-weight: bold;
+  color: rgb(62, 170, 48);
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .cards_element_title {
+    width: 45%;
+  }
+}
+@media (min-width: 1200px) {
+  .cards_element_title {
+    width: 23%;
+  }
+}
+
+.footer {
+  margin-top: 20px;
+  background-color: rgb(10, 131, 80);
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px blue;
+}
+
+.footer {
+  margin-top: 20px;
+  background-color: red;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px blue;
+  display: grid;
+  grid-template-columns: repeat(12, 100px);
+}
+
+.header {
+  color: rgb(62, 170, 48);
+  background-color: blue;
+  border: 1px solid black;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.contact-form {
+  border: 1px solid green;
+  background-color: brown;
+  padding: 15px;
+}/*# sourceMappingURL=main.css.map */

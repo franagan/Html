@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+}
+body{
+    display: flex;
+}
+nav{
+    height: 650px;
+    width: 20%;
+    background-color: aquamarine;
+    border: 3px solid;
+}
+header{
+    height: 60px;
+    width: 100%;
+    border: 2px solid;
+    text-align: center;
+    padding-top: 30px;
+}
+.nav-link{
+    height: 60px;
+    width: 100%;
+    border: 2PX solid;
+    text-align: center;
+    padding-top: 30px;
+}
+main{
+    background-color: azure;
+    height:100%;
+    width: 80%;
+    border: 2px solid;
+    padding-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+img{
+    height:200px;
+    width:auto;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- para dejar estatico parte web -->
+    <header class="menu-top>
+        <img src="./images/th.jfif" alt="logo" class="logo">
+    </header>
+    <section>
+        <form class="form">
+    <!-- (lenguaje progamacion) (get o post) -->
+    <div><label for="">Nombre</label>
+    <input type="text" placeholder="Fran" pattern="[a-zA-Záéíóú]{3,15}"/>
+</div> 
+    <div>
+        <label for="">Edad</label>
+        <input type="number" max="120" min="0" required>
+    </div>
+    <!-- expresion regular--pattern-regula la entrada de datos-->
+    <!-- para maquetarlo div -->
+    <!-- wrap cada elemento en fila diferente -->
+    <div>
+        <label for="email">email</label>
+        <input type="email" id="email" required>
+    </div>
+    <div>
+        <label for="phone">phone</label>
+        <input type="tel" id="phone" required>
+    </div>
+    <div>
+        <label for="password">password</label>
+        <input type="password" id="password" required maxlength="10" minlength="5">
+    </div>
+    <div>
+        <label for="turno">turno</label>
+        <!-- <input type="radio" name="turno1"/>Fulltime mismo name selecciona diferente puedes elgir varios -->
+        <input type="radio" name="turno2"/>Parttime
+        <input type="radio" name="turno2"/>Fulltime
+    </div>
+    <div>
+        <label for="checkbox">hobies</label>
+        <input type="checkbox">leer
+        <input type="checkbox">corres
+        <input type="checkbox">playa
+        <input type="checkbox">montaña
+    </div>
+    <select name="" id="">
+        <option value="uno">UNO</option>
+        <option value="dos">DOS</option>
+        <option value="tres">TRES</option>
+    </select>
+    <textarea name="" id=""</textarea>
+        <input type="date" name="" id=""</date>
+    <input type="submit" value="enviar">
+</form>
+</section>
+<div class="chat">
+    chat
+</div>
+
+  </body>
+</html>

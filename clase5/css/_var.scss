@@ -1,0 +1,33 @@
+
+//variables globales
+$background-color : pink;
+$secondary-color: rgb(211, 12, 168);
+$color-title: rgb(62, 170, 48);
+
+//recibe un parametro referido a una variable o cualquier nombre
+@mixin boxConfig ($colorShadow, $colorBackg) {
+    background-color: $colorBackg;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px $colorShadow ;
+} 
+@mixin tablet ($width-card) {
+    @media (min-width: 768px){
+        width: $width-card;
+    }
+}
+@mixin desktop ($width-card) {
+    @media (min-width: 1200px){
+        width: $width-card;
+    }
+}
+@mixin colorsTitle{
+    @content; //cualquier cosa
+    background-color: blue;
+    border: 1px solid black;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+@function calcularColumnas($width){
+    @return $width/12;
+}

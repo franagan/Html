@@ -1,0 +1,42 @@
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    h2 {
+        width: 100%;
+        color: rgb(104, 20, 201);
+        }
+    
+    &_element{
+        @include boxConfig (rgb(12, 180, 88), rgb(32, 9, 75));
+        width: 90%;
+        margin-bottom: 10px;
+        &-img{
+            width: 100%;
+                  
+        }
+        &_title{
+            font-weight: bold;
+            color: $color-title;
+            font-size: 20px;
+
+            // @media (min-width : 768px) {
+            //     width: 45%;
+            // @media (min-width : 1200px){
+            //         width: 23%;
+            @include tablet ( 45%);
+
+            @include desktop ( 23%);
+
+            
+                }
+                
+            }
+        } 
+    
+
+    .footer{
+        margin-top: 20px;
+        @include boxConfig (blue, rgb(10, 131, 80));
+    }

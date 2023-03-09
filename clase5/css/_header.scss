@@ -1,0 +1,7 @@
+.header { 
+  @include colorsTitle{ 
+    //cualquier cosa
+    color: $color-title;
+  }
+}
+ 

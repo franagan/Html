@@ -1,0 +1,21 @@
+.logo{
+    width: 200px;
+}
+.menu-top{
+    position: fixed;
+    background-color: blueviolet;
+    position: sticky; 
+    top: 0;
+    left: 0;
+    /*como fixed indicando sitio no tapa texto*/
+ z-index: 100000; 
+ /* para que aparezca siempre header por encima de todos */
+}
+.chat{
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
